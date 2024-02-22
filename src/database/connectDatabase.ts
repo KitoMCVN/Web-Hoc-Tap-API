@@ -11,7 +11,7 @@ const connectionDatabase = async () => {
     }
 
     await mongoose
-      .connect(MONGO_URI)
+      .connect(MONGO_URI, { dbName: "learnings" })
       .then(() => console.log("✅ Kết nối thành công database"))
       .catch((error) => {
         console.error("💢 Lỗi nè thằng lờ:", error);
