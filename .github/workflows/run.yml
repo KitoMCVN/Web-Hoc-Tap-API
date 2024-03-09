@@ -22,4 +22,4 @@ jobs:
       - name: Start
         run: npm run dev
         env:
-          DATABASE: ${{ env.DATABASE }}
+          DATABASE: ${{ secrets.DATABASE }}
